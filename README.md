@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**FSST+** is an enhanced string compression system that extends the [Fast Static Symbol Table (FSST)](https://github.com/cwida/fsst) algorithm to effectively compress prefix-heavy datasets while preserving its critical fast random-access capabilities.
+[**FSST+**](https://homepages.cwi.nl/~boncz/msc/2025-YanLannaAlexandre.pdf) is an enhanced string compression system that extends the [Fast Static Symbol Table (FSST)](https://github.com/cwida/fsst) algorithm to effectively compress prefix-heavy datasets while preserving its critical fast random-access capabilities.
 
 Modern analytical databases process vast amounts of string data. General-purpose compressors like **Zstandard** offer high ratios but lack fast random access, while lightweight schemes like **FSST** offer speed but fail to exploit longer-range redundancies, such as shared prefixes in URLs, file paths, or identifiers. FSST+ bridges this gap, providing high compression density and fast individual string decompression.
 
